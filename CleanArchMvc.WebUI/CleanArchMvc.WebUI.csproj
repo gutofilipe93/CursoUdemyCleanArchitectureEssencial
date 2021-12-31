@@ -9,4 +9,14 @@
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Views\Categories\" />
+    <None Remove="Views\Products\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\Categories\" />
+    <Folder Include="Views\Products\" />
+  </ItemGroup>
 </Project>

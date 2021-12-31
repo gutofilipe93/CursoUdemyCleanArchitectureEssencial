@@ -1,4 +1,7 @@
 ﻿using System;
+using CleanArchMvc.Application.Interfaces;
+using CleanArchMvc.Application.Mappings;
+using CleanArchMvc.Application.Services;
 using CleanArchMvc.Data.Context;
 using CleanArchMvc.Data.Repositories;
 using CleanArchMvc.Domain.Interfaces;
@@ -19,6 +22,14 @@ namespace CleanArchMvc.IoC
             services.AddScoped<IProductRepository, ProductRepository>();
 
             return services;    
+        }
+
+        public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
+        {            
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddAutoMapper(typeof(DomainToDtoMappingProfile));
+            return services;
         }
     }
 }

@@ -9,4 +9,10 @@
     <ProjectReference Include="..\CleanArchMvc.Data\CleanArchMvc.Data.csproj" />
     <ProjectReference Include="..\CleanArchMvc.Application\CleanArchMvc.Application.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
 </Project>

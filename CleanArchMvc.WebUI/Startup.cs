@@ -25,6 +25,7 @@ namespace CleanArchMvc.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddInfrastructure(Configuration);
+            services.AddServices(Configuration);
             services.AddControllersWithViews();
         }
 
@@ -52,7 +53,7 @@ namespace CleanArchMvc.WebUI
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Products}/{action=Index}/{id?}");
             });
         }
     }

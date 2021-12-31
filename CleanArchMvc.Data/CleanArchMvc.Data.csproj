@@ -9,7 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Context\" />
-    <None Remove="Identity\" />
     <None Remove="Repositories\" />
     <None Remove="EntitiesConfiguration\" />
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
@@ -18,7 +17,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
-    <Folder Include="Identity\" />
     <Folder Include="Repositories\" />
     <Folder Include="EntitiesConfiguration\" />
   </ItemGroup>
