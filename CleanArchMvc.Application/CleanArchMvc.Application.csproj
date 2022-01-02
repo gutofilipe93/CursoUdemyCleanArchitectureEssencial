@@ -13,14 +13,24 @@
     <None Remove="Mappings\" />
     <None Remove="Interfaces\" />
     <None Remove="Services\" />
+    <None Remove="MediatR" />
+    <None Remove="Products\" />
+    <None Remove="Products\Commands\" />
+    <None Remove="Products\Handlers\" />
+    <None Remove="Products\Queries\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTOs\" />
     <Folder Include="Mappings\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
+    <Folder Include="Products\" />
+    <Folder Include="Products\Commands\" />
+    <Folder Include="Products\Handlers\" />
+    <Folder Include="Products\Queries\" />
   </ItemGroup>
 </Project>
