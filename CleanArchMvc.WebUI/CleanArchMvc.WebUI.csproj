@@ -20,5 +20,9 @@
     <Folder Include="Views\Categories\" />
     <Folder Include="Views\Products\" />
     <Folder Include="Views\Home\" />
+    <Folder Include="wwwroot\Image\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\Image\" />
   </ItemGroup>
 </Project>
