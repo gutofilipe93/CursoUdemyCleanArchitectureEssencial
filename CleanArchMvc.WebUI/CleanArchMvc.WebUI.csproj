@@ -13,10 +13,12 @@
     <None Remove="Controllers\" />
     <None Remove="Views\Categories\" />
     <None Remove="Views\Products\" />
+    <None Remove="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Views\Categories\" />
     <Folder Include="Views\Products\" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
 </Project>
